@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>利用者案内［武蔵野第一図書館］</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+          $(function() {
+               $("#header").load("../common/header.html");
+               $("#footer").load("../common/footer.html");
+            　　$("#left").load("../common/left.html");
+        });
+        </script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <div id="index">
+            <div id="left"></div>
+            <div id="content">
+                <h1 id="faci-tit">施設案内</h1>
+                <div class="facility">
+                    <h1>図書館棟</h1>
+                    <div id="border3">
+                        <h2>1F</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li><!-- 折り畳み展開ポインタ -->
+                                            <div onclick="obj=document.getElementById('t1-lo').style; obj.display=(obj.display=='none')?'block':'none';" class="faci-place">
+                                                <a style="cursor:pointer;">ロビー・窓口</a>
+                                            </div>
+                                            <!--// 折り畳み展開ポインタ -->
+
+                                            <!-- 折り畳まれ部分 -->
+                                            <div id="t1-lo" style="display:none;clear:both;">
+
+                                                <!--ここの部分が折りたたまれる＆展開される部分になります。自由に記述してください。-->
+                                                <ul class="faci-room">
+                                                    <li>
+                                                        <div onclick="obj=document.getElementById('t1-lo-re').style; obj.display=(obj.display=='none')?'block':'none';" class="faci-room">
+                                                            <a style="cursor:pointer;">図書館総務部窓口</a>
+                                                        </div>
+                                                        <!--// 折り畳み展開ポインタ -->
+
+                                                        <!-- 折り畳まれ部分 -->
+                                                        <div id="t1-lo-re" style="display:none;clear:both;" class="faci-dete">
+
+                                                            <!--ここの部分が折りたたまれる＆展開される部分になります。自由に記述してください。-->
+                                                            				総合案内、イベント参加申込、利用者登録（図書カード発行）、施設利用申込、図書寄贈申出などが行えます。ご不明な点がございましたら、お気軽にお声掛けください。
+                                                        </div>
+                                                        <!--// 折り畳まれ部分 -->
+                                                    </li>
+                                                    <li>
+                                                        <div onclick="obj=document.getElementById('t1-lo-rest').style; obj.display=(obj.display=='none')?'block':'none';" class="faci-room">
+                                                            <a style="cursor:pointer;">待合スペース</a>
+                                                        </div>
+                                                        <!--// 折り畳み展開ポインタ -->
+
+                                                        <!-- 折り畳まれ部分 -->
+                                                        <div id="t1-lo-rest" style="display:none;clear:both;" class="faci-dete">
+
+                                                            <!--ここの部分が折りたたまれる＆展開される部分になります。自由に記述してください。-->
+                                                            待ち合わせなど、誰でも自由に使うことができます。貸出前の本や資料を持ち込むことはできません。
+                                                        </div>
+                                                        <!--// 折り畳まれ部分 -->
+                                                    </li>
+                                                    <li>
+                                                        <div onclick="obj=document.getElementById('t1-lo-ga').style; obj.display=(obj.display=='none')?'block':'none';" class="faci-room">
+                                                            <a style="cursor:pointer;">展示スペース（常設）</a>
+                                                        </div>
+                                                        <!--// 折り畳み展開ポインタ -->
+
+                                                        <!-- 折り畳まれ部分 -->
+                                                        <div id="t1-lo-ga" style="display:none;clear:both;" class="faci-dete">
+
+                                                            <!--ここの部分が折りたたまれる＆展開される部分になります。自由に記述してください。-->
+                                                            図書隊に関する資料が展示してあり、図書隊について詳しく知ることができます。
+                                                        </div>
+                                                        <!--// 折り畳まれ部分 -->
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <!--// 折り畳まれ部分 -->
+                                        </li>
+                                        <li><!-- 折り畳み展開ポインタ -->
+                                            <div onclick="obj=document.getElementById('t1-ca').style; obj.display=(obj.display=='none')?'block':'none';" class="faci-place">
+                                                <a style="cursor:pointer;">図書館カウンター</a>
+                                            </div>
+                                            <!--// 折り畳み展開ポインタ -->
+
+                                            <!-- 折り畳まれ部分 -->申込
+                                            <div id="t1-ca" style="display:none;clear:both;">
+
+                                                <!--ここの部分が折りたたまれる＆展開される部分になります。自由に記述してください。-->
+                                                <ul class="faci-room">
+                                                    <li>
+                                                        <div onclick="obj=document.getElementById('t1-ca-1').style; obj.display=(obj.display=='none')?'block':'none';" class="faci-room">
+                                                            <a style="cursor:pointer;">貸出・返却・予約受付
+                                                            </a>
+                                                        </div>
+                                                        <!--// 折り畳み展開ポインタ -->
+
+                                                        <!-- 折り畳まれ部分 -->
+                                                        <div id="t1-ca-1" style="display:none;clear:both;" class="faci-dete">
+
+                                                            <!--ここの部分が折りたたまれる＆展開される部分になります。自由に記述してください。-->
+                                                            				総合案内、イベント参加申込、利用者登録（図書カード発行）、施設利用申込、図書寄贈申出などが行えます。ご不明な点がございましたら、お気軽にお声掛けください。
+                                                        </div>
+                                                        <!--// 折り畳まれ部分 -->
+                                                    </li>
+                                                    <li>
+                                                        <div onclick="obj=document.getElementById('t1-ca-2').style; obj.display=(obj.display=='none')?'block':'none';" class="faci-room">
+                                                            <a style="cursor:pointer;">レファレンス申込</a>
+                                                        </div>
+                                                        <!--// 折り畳み展開ポインタ -->
+
+                                                        <!-- 折り畳まれ部分 -->
+                                                        <div id="t1-ca-2" style="display:none;clear:both;" class="faci-dete">
+
+                                                            <!--ここの部分が折りたたまれる＆展開される部分になります。自由に記述してください。-->
+                                                            待ち合わせなど、誰でも自由に使うことができます。貸出前の本や資料を持ち込むことはできません。
+                                                        </div>
+                                                        <!--// 折り畳まれ部分 -->
+                                                    </li>
+                                                    <li>
+                                                        <div onclick="obj=document.getElementById('t1-ca-3').style; obj.display=(obj.display=='none')?'block':'none';" class="faci-room">
+                                                            <a style="cursor:pointer;">展示スペース（常設）</a>
+                                                        </div>
+                                                        <!--// 折り畳み展開ポインタ -->
+
+                                                        <!-- 折り畳まれ部分 -->
+                                                        <div id="t1-ca-3" style="display:none;clear:both;" class="faci-dete">
+
+                                                            <!--ここの部分が折りたたまれる＆展開される部分になります。自由に記述してください。-->
+                                                            図書隊に関する資料が展示してあり、図書隊について詳しく知ることができます。
+                                                        </div>
+                                                        <!--// 折り畳まれ部分 -->
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <!--// 折り畳まれ部分 -->
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>                         
+                </div>
+                <div class="facility">
+                    <h1>公共棟</h1>
+                    <div id="border3">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="right"></div>
+        </div>
+        <footer id="footer"></footer>
+    </body>
+</html>

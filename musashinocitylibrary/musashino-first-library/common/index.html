@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>武蔵野第一図書館</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+          $(function() {
+               $("#header").load("../common/header.html");
+               $("#footer").load("../common/footer.html");
+               $("#left").load("../common/left.html");
+        });
+        </script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <div id="index">
+            <div id="left"></div>
+            <div id="content">
+                    <h1 class="title">最新情報</h1>
+                <div class="new">
+                    <div class="border">
+                        <ul>
+                        <li><a href="../../../kantolibrarydefenceforce/info/info300806.html"><time datetime="2030-08-06">2030.08.06</time>不審者情報</a><span class="n">NEW</span></li>
+                        <li><a href="info300805.html"><time datetime="2030-08-05">2030.08.05</time> 9月の読み聞かせ会</a><span class="n">NEW</span></li>
+                        <li><a href="info/info300801"><time datetime="2030-08-01">2030.08.01</time>8月の新着図書</a></li>
+                        <li><a href="../../info/info300801"><time datetime="2030-08-01">2030.08.01</time>お盆の開館について</a></li>
+                        <li><a href="info300729.html"><time datetime="2030-07-29">2030.07.29</time> 香坂大地・読み聞かせイベント 開催決定</a></li>
+                        <li><a href="../../info/info300713.html"><time datetime="2030-07-13">2030.07.13</time>検閲抗争に伴う臨時休館のお知らせ</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <h1 class="title">新着図書</h1>
+                <div class="new">
+                    <div class="border">
+                        <ul>
+                            <li>サヨナラの未来/納富万米</li>
+                            <li>マスクの裏/立嶋横路</li>
+                            <li>陸を泳ぐ船/桂川計</li>
+                            <li>狂い咲け横断歩道の花/下道甚平</li>
+                            <li>蘇るブラックヒストリー/衣文朗</li>
+                        </ul>
+                    </div>
+            </div>
+            <h1 class="title">ランキング</h1>
+                <div class="new">
+                    <div class="border">
+                        <ol id="top-rank">
+                           <li><a href="../../library/library/1000000000008.html">MoNoToNe/榊原カリエッティ</a></li>
+                            <li><a href="../../library/library/1000000000011.html">恋人ウエハース/能登早苗</a></li>
+                            <li><a href="../../library/library/1000000000012.html">マスクの裏/立嶋横路</a></li>
+                            <li><a href="../../library/library/1000000000010.html">芸術は爆発か検証してみた/渡辺渓流</a></li>
+                            <li><a href="../../library/library/1000000000009.html">Lemonade/田本優斗</a></li>
+                            <li>針一本呑まず/烏合シヅル</li>
+                            <li>Hey Siriの危険性/秋元鈴虫</li>
+                        </ol>
+                    </div>
+                </div>
+                <p class="top-detail"><a href="../book/ranking.html">詳しく見る</a></p>
+                 <h1 class="title">イベントカレンダー</h1>
+                <div class="new">
+                    <h2>8月</h2>
+                    <h3>August 2030</h3>
+                    <table class="calender">
+                        <tr><th class="san">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="sat">土</th></tr>
+                        <tr><td class="san"></td><td></td><td></td><td></td><td>1</td>
+                            <td>2
+                                <p>第1回小学生職業体験<span class="mu">武</span></p>
+                            </td>
+                            <td class="sat">3
+                                <p>小中学生読書感想文合宿<span class="mu">武</span><span class="do">読</span></p>
+                            </td></tr>
+                        <tr><td class="san">4
+                            <p>小中学生読書感想文合宿<span class="mu">武</span></p>
+                            </td>
+                            <td>5
+                                <p>＜高校生主催＞読み聞かせ会<span class="mu">武</span></p>
+                            </td>
+                            <td>6
+                                <p>第1回中学生職業体験<span class="mu">武</span></p>
+                            </td>
+                            <td>7
+                                <p><span class="do">読</span></p>
+                            </td>
+                            <td>8
+                                <p>図書防衛員訓練体験<span class="ki">基</span></p>
+                            </td>
+                            <td>9
+                                <p>17時閉館<span class="ei">営</span></p>
+                            </td>
+                            <td class="sat">10
+                                <p>図書特殊部隊と子供のスポーツ大会<span class="ki">基</span></p>
+                            </td></tr>
+                        <tr><td class="san">11
+                                <p>第2回関東図書基地ツアー<span class="ki">基</span></p>
+                            </td>
+                            <td>12
+                                <p>19時閉館<span class="ei">営</span> <span class="do">読</span></p>
+                            </td>
+                            <td class="close">13
+                                <p>休館<span class="ei">営</span></p>
+                            </td>
+                            <td class="close">14
+                                <p>休館<span class="ei">営</span></p>
+                            </td>
+                            <td class="close">15
+                                <p>休館<span class="ei">営</span></p>
+                            </td>
+                            <td>16
+                                <p>高校生入隊希望者説明・見学会<span class="ki">基</span></p>
+                            </td>
+                            <td class="sat">17
+                                <p>萱野美樹ピアノリサイタル<span class="mu">武</span>
+                                    <span class="do">読</span>
+                                </p>
+                            </td></tr>
+                        <tr><td class="san">18
+                                <p>子供花火大会<span class="ki">基</span></p>
+                            </td>
+                            <td>19
+                                <p>夏休み！図書隊員が自由研究のお手伝い<span class="mu">武</span></p>
+                            </td>
+                            <td>20
+                                <p>夏休み！図書隊員が自由研究のお手伝い<span class="mu">武</span></p>
+                            </td>
+                            <td>21
+                                <p>夏休み！図書隊員が自由研究のお手伝い<span class="mu">武</span><span class="do">読</span></p>
+                            </td>
+                            <td class="close">22
+                                <p>休館<span class="ei">営</span></p>
+                            </td>
+                            <td>23
+                                <p>第2回小学生職業体験<span class="mu">武</span></p>
+                            </td>
+                            <td class="sat">24
+                                <p><span class="do">読</span></p>
+                            </td></tr>
+                        <tr><td class="san">25
+                                <p>第2回中学生職業体験<span class="mu">武</span></p>
+                            </td>
+                            <td>26</td><td>27</td>
+                            <td>28
+                                <p><span class="do">読</span></p>
+                            </td>
+                            <td>29</td><td>30</td><td class="sat">31</td></tr>
+                    </table>
+                    <p id="calender">
+                        <span class="ei">営</span>休館日・開館時間
+                        <span class="mu">武</span>武蔵野第一図書館イベント
+                        <span class="ki">基</span>関東図書基地イベント
+                        <span class="do">読</span>読み聞かせ会
+                        <br>※休館日・開館時間及びイベントは変更になる可能性があります。
+                        <br>※検閲抗争による休館・開館時間の変更は最新情報にてお知らせします。
+                    </p>
+                </div>
+            </div>
+            <div id="right">
+                <img src="../image/adoptionadv.PNG" id="adoptionadv">
+            </div>
+        </div>
+        <footer id="footer"></footer>
+    </body>
+</html>

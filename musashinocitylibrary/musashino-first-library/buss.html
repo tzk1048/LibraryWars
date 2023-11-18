@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>武蔵野第一図書館</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+          $(function() {
+               $("#header").load("../common/header.html");
+               $("#footer").load("../common/footer.html");
+               $("#left").load("../common/left.html");
+        });
+        </script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <div id="index">
+            <div id="left"></div>
+            <div id="content">
+                    <bus></bus>
+            </div>
+            <div id="right">
+                <img src="../image/adoptionadv.PNG" id="adoptionadv">
+            </div>
+        </div>
+        <footer id="footer"></footer>
+    </body>
+</html>

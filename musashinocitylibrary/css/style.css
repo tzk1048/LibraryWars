@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #9EE0FF;
+}
+
+/*ヘッダー*/
+
+header {
+    margin: 0;
+    border-bottom: 5px solid #3E5CAD;
+    color: #758585;
+    padding-bottom: 30px;
+}
+
+header h1 {
+    margin: 10px 15px 20px 15px;
+    font-size: 32px;
+    color: #3E5CAD;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    float: left;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#index {
+    width: 100%;
+    margin: 0;
+}
+
+#left {
+    float: left;
+    width: 10%;
+    margin: 0;
+}
+
+#content {
+    width: 60%;
+    margin:auto;
+}
+
+.area {
+  width: 90%;
+  margin: 25px auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+ 
+.tab_class {
+    width: calc(90%/5);
+    background-color: #46B1D4;
+    line-height: 25px;
+    font-size: 20px;
+    padding: 5px 2px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    order: -1;
+    margin: 0 auto;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+ 
+input[name="tab_name"] {
+  display: none;
+}
+ 
+input:checked + .tab_class {
+  background-color: cadetblue;
+  color: aliceblue;
+}
+ 
+.content_class {
+    display: none;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+}
+ 
+input:checked + .tab_class + .content_class {
+  display: block;
+}
+
+.content_class ul {
+    list-style: none;
+    font-size: 15px;
+    margin: 0;
+}
+
+.content_class a {
+    color: #758585;
+    text-decoration: underline;
+}
+
+.content_class a:hover {
+    
+}
+
+.n {
+    color: #ffffff;
+    background-color: #ff0000;
+    font-size: 5px;
+    margin: 2px 5px;
+    padding: 1px 2px;
+}
+
+#toph2 {
+    font-size: 15px;
+    margin:5px auto 0 5%;
+}
+
+#right {
+    width: 15%;
+    margin: 0;
+    float: right;
+}
+
+#footer {
+    clear: both;
+}

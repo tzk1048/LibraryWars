@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>武蔵野第一図書館</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+          $(function() {
+               $("#header").load("../common/header.html");
+               $("#footer").load("../common/footer.html");
+               $("#left").load("../common/left.html");
+        });
+        </script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <div id="index">
+            <div id="left"></div>
+            <div id="content">
+                <div id="buss">
+                    <h2>無料シャトルバス</h2>
+                    <hr>
+                    <p>
+                        利用者の皆様が図書館に来館しやすいよう、武蔵野第一図書館では、関東図書基地と武蔵境駅間の無料シャトルバスを15分間隔で運行しています。（15分間隔でない時間帯もあるので、下記の時刻表をお確かめください。）
+                    </p>
+                    <table id="buss-sche">
+                        <tr><th colspan="2">関東図書基地発</th><th colspan="2">武蔵境駅発</th></tr>
+                        <tr><td>9</td><td> 15 45</td><td>9</td><td>30</td></tr>
+                        <tr><td>10</td><td> 00 15 30 45</td><td>10</td><td> 00 15 30 45</td></tr>
+                        <tr><td>11</td><td> 00 15 45</td><td>11</td><td> 00 15 30</td></tr>
+                        <tr><td>12</td><td> 00 15 30 45</td><td>12</td><td> 00 15 30 45</td></tr>
+                        <tr><td>13</td><td> 00 30 45</td><td>13</td><td> 15 45</td></tr>
+                        <tr><td>14</td><td> 15 45</td><td>14</td><td> 00 30 45</td></tr>
+                        <tr><td>15</td><td> 00 15 30 45</td><td>15</td><td> 00 15 30 45</td></tr>
+                        <tr><td>16</td><td> 00 15 30 45</td><td>16</td><td> 00 15 30* 45</td></tr>
+                        <tr><td>17</td><td> 00 15* 45</td><td>17</td><td> 00 15 30</td></tr>
+                        <tr><td>18</td><td> 00 15 45</td><td>18</td><td> 00 15 30</td></tr>
+                        <tr><td>19</td><td> 00 15</td><td>19</td><td></td></tr>                  
+                    </table>
+                    <p>＊17時閉館の日は関東図書基地発は17:15、武蔵境駅発は16:30が最終便になります。</p>
+                </div>
+            </div>
+            <div id="right">
+                <img src="../image/adoptionadv.PNG" id="adoptionadv">
+            </div>
+        </div>
+        <footer id="footer"></footer>
+    </body>
+</html>

@@ -1,0 +1,1062 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #EBFFF5;
+}
+
+a {
+    color: blue;
+}
+
+/*header*/
+
+header {
+    margin: 0;
+    border-bottom: 5px solid #3EAD5C;
+    color: #758585;
+}
+
+header h1 {
+    float: left;
+    margin: 10px 15px 20px 15px;
+    font-size: 32px;
+    color: #3EAD5C;
+}
+
+
+#logo ul {
+    float: right;
+    margin:  25px;
+    list-style: none;
+    font-size: 15px;
+}
+
+#logo li {
+    display: inline-block;
+    text-align: center;
+    margin: auto 25px;
+}
+
+#logo a {
+    color: #758585;
+}
+
+#logo a:hover{
+    color: #3EAD5C;
+}
+
+nav {
+    clear: both;
+    text-align: right;
+    font-size: 18px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li::after {
+    content: "|";
+    padding: 0 15px;
+}
+
+nav ul li:last-child::after {
+    content: "";
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #758585;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+}
+
+/*header終わり*/
+
+
+#index {
+    clear: both;
+    padding:0;
+    margin: 0;
+}
+
+h6 {
+    margin: 0 5px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #AAAAAA;
+}
+
+h6 a{
+    margin: 0 5px;
+    color: #3EAD5C;
+}
+
+/*left*/
+
+#left {
+    width: 20%;
+    margin: 0;
+    float: left; 
+}
+
+#openinghours {
+    width: 420%;
+    background-color: #CC9DFF;
+    margin: 100px 30% 15px 30%;
+    padding: 10px;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#openinghours h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+#openinghours h2 {
+    margin: 0px;
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+#openinghours p {
+    margin: 0;
+    padding: 0 15px;
+    font-size: 12px;
+}
+
+#border2 {
+    border: #CC9DFF solid 5px;
+    padding: 5px;
+    border-image: url("../image/border.PNG")24 24 round;
+    padding: 5px
+}
+
+#mcl {
+    width: 440%;
+    margin: 15px 30%;
+}
+
+.kldf {
+    background-color: #0A321A;
+    color: white;
+    width: 420%;
+    margin: 0 30%;
+    padding: 10px 5px;
+}
+
+.kldf img {
+    width: 30%;
+    float: left;
+    margin: 0 5px 15px 5px;
+}
+
+.kldf h1 {
+    font-size: 140%;
+    margin:10px 10px 0 10px;
+    text-align: right;
+}
+
+.kldf h2 {
+    font-size: 100%;
+    margin: 0px 10px;
+    text-align: right;
+}
+
+#kldf {
+    text-decoration: none;
+}
+
+/*left終わり*/
+
+/*content*/
+
+#content {
+    float: left;
+    width: 60%;
+    margin: 15px 0;
+}
+
+.title {
+    text-align: center;
+    margin: 10px auto 0 10%;
+    background-color: #2C98BE;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 20px;
+    display: inline-block;
+    
+}
+
+/*content終わり*/
+
+/*トップ*/
+
+.new {
+    margin: 0px auto;
+    text-align: left;
+    width: 80%;
+    background-color: #FFFFFF;
+    padding: 15px;
+}
+
+.border {
+    border: 5px solid #3EAD5C;
+    padding: 15px;
+}
+
+.new ul {
+    list-style: none;
+    font-size: 15px;
+    margin: 0;
+}
+
+.new a {
+    color: #758585;
+    text-decoration: underline;
+}
+
+.new a:hover {
+    color: #2C98BE;
+}
+
+.n {
+    color: #ffffff;
+    background-color: #ff0000;
+    font-size: 1px;
+    margin: 2px 5px;
+    padding: 1px 2px;
+}
+
+.new ol {
+    font-size: 15px;
+    padding: 0;
+    list-style: none;
+    counter-reset: rank;
+    
+}
+
+.new ol li {
+    margin: 7px;
+}
+
+.new ol li:before {
+    counter-increment: rank;
+    content: counter(rank);
+    margin: 15px;
+    background-color: #F274BA;
+    border-radius: 50%;
+    padding: 5px 7px;
+    color: #FFFFFF;
+}
+
+.new h2 {
+    float: left;
+    font-size: 40px;
+    margin: 5px 15px 0px 15px;
+    padding: 0;
+    color: red;
+}
+
+.new h3 {
+    margin: 30px 15px 0px;
+    font-size: 15px;
+    font-weight: 100;
+    color: blue;
+}
+
+.top-detail {
+    text-align: right;
+    margin: 10px 10%;
+}
+
+.calender {
+    clear: both;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.calender th {
+    width: 10%;
+    font-size: 15px;
+    font-weight: 100;
+    border: 2px solid #000000;
+}
+
+.calender td {
+    border: 2px solid #000000;
+    vertical-align: top;
+    font-size: 15px;
+    padding: 0 auto;
+}
+
+.calender p {
+    margin: 0 auto;
+    padding: 0;
+    text-align: start;
+    color: #000000;
+    font-weight: 100;
+}
+
+.mu {
+    color: green;
+    margin-left: 10px;
+    border: 1px solid green;
+}
+
+.ei{
+    color: red;
+    margin-left: 10px;
+    border: 1px solid red;
+}
+
+.ki {
+    color: blue;
+    margin-left: 10px;
+    border: 1px solid blue;
+}
+
+.do {
+    color: orange;
+    margin-left: 10px;
+    border: 1px solid orange;
+    padding: 0;
+}
+
+.san {
+    background-color: #FACFD0;
+    color: red;
+}
+
+.sat {
+    background-color: #C3E3FA;
+    color: blue;
+}
+
+.close{
+    background-color: #DEDEDE;
+}
+
+#calender {
+ font-size: 12px;   
+}
+
+#calender span {
+    margin-right: 5px;
+}
+
+/*トップ終わり*/
+
+/*right*/
+
+#right {
+    width: 15%;
+    margin: 30px 0;
+    float: right;
+}
+
+#right img {
+    width: 80%;
+    margin: auto;
+}
+
+/*rightおわり*/
+
+/*フッター*/
+
+footer {
+    clear: both;
+    padding: 10px 15px;
+    background-color: #3EAD5C;
+}
+
+address {
+    color: #FFFFFF;
+}
+
+address h1 {
+    font-size: 12px;
+    font-weight: 100;
+    margin:auto 0;
+}
+
+address p {
+    margin: auto 0;
+    font-size: 10px;
+}
+
+/*ヘッダー終わり*/
+
+/*イベント*/
+
+.ev-hanabi {
+    width: 90%;
+    background-color: #000000;
+    padding: 0 7px 7px 7px;
+    margin: 7px auto;
+}
+
+.ev-hanabi h2 {
+    color: #FFFFFF;
+    font-family: 'Noto Serif JP', serif;
+    margin: 0;
+    font-size: 22px;
+}
+
+#hanabititle {
+    float: left;
+    text-align: left;
+    margin-left: 7px;
+}
+
+#hanabidate {
+    float: right;
+    text-align: center;
+    background-color: rgba(255,74,113,0.5);
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+#hanabidate p {
+    margin: auto;
+    padding-top: 17px;
+    font-size: 35px;
+    font-family: 'Noto Serif JP', serif;
+    color: #FFF538;
+    vertical-align: middle;
+}
+
+.hanabiad {
+    background-image: url(../image/hanabi.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    height: 225px;
+    padding-top: 15px;
+}
+
+#hanabitable {
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    width: 96%;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+}
+
+#hanabitable td {
+    border: 1px solid #000000;
+    padding: 0;
+}
+
+.hanabitt {
+    width: 10%;
+}
+
+.ev-sport {
+    background-color: #9CF0FF;
+    padding: 15px;
+    width: 90%;
+    margin: 15px auto;
+}
+
+.ev-sport h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    width: 60%;
+    color: #008CFF;
+    font-weight: 800;
+    float: left;
+}
+
+.ev-sport h3 {
+    width: 60%;
+    margin: 0;
+    float: left;
+    padding-top: 25px;
+    font-size: 25px;
+    color: red;
+}
+
+.ev-sport img {
+    float: right;
+    width: 30%;
+    margin: -125px 25px -15px 0;
+}
+
+#sportdetail {
+    clear: both;
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 0px;
+}
+
+#sportdetail h4 {
+    color: #008CFF;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#sportdetail p{
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    padding-left: 25px;
+}
+
+#exp {
+    padding: 15px;
+    width: 90%;
+    margin: 15px auto;
+    background-color: #FAB6DE;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#exp h2 {
+    font-size: 40px;
+    margin: 0 15px;
+    color: #FA004D;
+}
+
+#exp h3  {
+    display: inline-block;
+    font-size: 75px;
+    margin: 0 15px;
+    color: #FA004D;
+    position: relative;
+    padding: 0;
+    z-index: 0;
+}
+
+#exp h3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    height: 15px;
+    background: repeating-linear-gradient(-45deg, #D082FA, #D082FA 5px, rgba(0,0,0,0) 2px, rgba(0,0,0,0) 10px);
+    z-index: -1;
+}
+
+#exp h4 {
+    color: #FA5274;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+#exp p {
+    margin: 0 25px;
+}
+
+#exp-con {
+    margin: 10px 15px;
+    font-size: 15px;
+    
+}
+
+#exp table {
+    text-align: center;
+    width: 80%;
+    border-collapse: collapse;
+    margin: 15px auto;
+    background-color: rgba(255,255,255,0.8)
+}
+
+#exp th {
+    border: 2px solid #000000;
+}
+
+#exp td {
+    border: 2px solid #000000;
+}
+
+/*イベント終わり*/
+
+/*利用者案内*/
+
+#user {
+    background-color: #F7FAF2;
+    padding: 15px;
+    width: 80%;
+    margin: 25px auto;
+}
+
+#border3 {
+    border: 5px dashed #3EAD5B;
+    padding: 15px;
+    margin: auto;
+}
+
+#user h2 {
+    font-size: 40px;
+    color: #3EAD5B;
+    margin: auto;
+    text-align: center;
+    
+}
+
+#user h3 {
+    background: #3EAD5B;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+}
+
+#user h4 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #3EAD5B;
+    margin: 15px;
+}
+
+#user p {
+    font-size: 15px;
+    margin: 15px;
+}
+
+#user ol {
+    font-size: 15px;
+    margin: 15px;
+}
+
+#user ul {
+    font-size: 15px;
+    margin: 15px;
+}
+
+/*バス案内*/
+
+#buss {
+    background-color: white;
+    width: 90%;
+    padding: 15px;
+    margin: auto;
+}
+
+#buss h2 {
+    color: lightskyblue;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 15px;
+    padding: 0;
+}
+
+#buss hr {
+    border: 1px dashed gray;
+    border-collapse: collapse;
+}
+
+#buss p {
+    font-size: 15px;
+    text-indent: 1em;
+}
+
+#buss-sche {
+    width: 90%;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin: auto;
+}
+
+#buss-sche td {
+    padding: 0 10px;
+}
+
+/*申し込みフォーム*/
+
+#ev-back {
+    margin:auto auto 15px 10%;
+    font-size: 15px;
+    color: blue;
+}
+
+.application {
+    border-collapse: collapse;
+    width: 80%;
+    text-align: left;
+    font-size: 20px;
+    margin: 15px auto;
+    background-color: #FFB5D2;
+}
+
+.application td {
+    border: 2px solid #AAAAAA;
+    padding: 25px;
+    vertical-align: middle;
+}
+
+.application th {
+    border: 2px solid #AAAAAA;
+    padding: 15px;
+}
+
+#app-title {
+    width: 25%;
+    padding: 10px;
+}
+
+#city {
+    width: 150px;
+}
+
+#address {
+    width: 250px
+}
+
+.application input {
+    font-size: 15px;
+    padding: 0;
+    margin: auto;
+}
+
+.application h2 {
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0;
+}
+
+select {
+    font-size: 15px;
+    padding: 2px;
+}
+
+#btn {
+    font-size: 15px
+}
+
+.tel {
+    width: 50px;
+    margin: 0 5px;
+}
+
+.application label {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.application p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.app-desi {
+    font-size: 25px;
+    margin: 15px 45%;
+    width: 10%;
+    text-align: center;
+}
+
+.radio {
+    margin: auto 5px;
+    padding: auto 0;
+    width: 15px;
+    vertical-align: middle;
+    height: 15px
+}
+
+.application-index {
+    margin: auto;
+    font-size: 25px;
+    width: 80%;
+    color: white;
+    font-weight: 300;
+    background-color: #3EAD5C;
+    padding-left: 15px;
+}
+
+.application-guide {
+    width: 80%;
+    margin: 15px auto;
+    background-color: #FFFAB5;
+    font-size: 15px;
+    padding: 15px 0;
+    
+}
+
+.application-guide p{
+    margin: 0 15px;
+}
+
+#app-ex {
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+#app-ex th,td {
+    border: 2px solid black;
+}
+
+.application-guide h2{
+    margin: 10px 15px;
+    font-size: 20px;
+}
+
+.application-guide ol{
+    margin: 0 15px;
+    
+}
+
+.confirm {
+    background-color: #B5D9FF;
+    width: 80%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.confirm h2 {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.confirm p {
+    margin: 15px;
+    font-size: 15px;
+    color: red;
+}
+
+.confirm ul {
+    list-style: none;
+    font-size: 15px
+}
+
+/*申し込み完了ページ*/
+#app-comp {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+}
+
+#app-comp h2 {
+    font-size: 30px;
+}
+
+#app-comp p {
+    font-size: 15px;
+}
+
+#app-comp a {
+    color: blue;
+    font-size: 15px;
+}
+
+/*イベント詳細*/
+#ev-detail {
+    margin: auto;
+    font-size: 25px;
+    width: 80%;
+    color: white;
+    font-weight: 300;
+    background-color: #3EAD5C;
+    padding-left: 15px;
+}
+
+.ev-detail {
+    width: 80%;
+    margin: 15px auto;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 15px;
+}
+
+.ev-detail td {
+    padding: 5px;
+}
+
+.ev-detail a {
+    color: blue;
+}
+
+/*ランキング*/
+#rank-top {
+    background-color: #3EAD5C;
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+
+#rank-exp {
+    width: 90%;
+    margin: 15px auto;
+    font-size: 15px;
+}
+
+.rank-title {
+    background-color: #3EAD5C;
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    padding: 5px;
+    color: white;
+    font-weight: 100;
+}
+
+.rank-intro {
+    background-color: white;
+    width: 85%;
+    margin: auto;
+    padding: 15px;
+    border: 2px dashed #3EAD5C;
+    
+}
+
+.rank {
+    font-size: 20px;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-left: 8%;
+    padding: 2px 25px;
+    background-color: #3EAD5C;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    font-weight: 100;
+    
+}
+
+.rank-intro h5 {
+    margin: 10px;
+    font-size: 20px;
+    
+}
+
+.rank-intro table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+    font-size: 15px;
+    border: 3px solid white;
+}
+
+.rank-intro td {
+    padding: 10px 0 10px 7px;
+    border: 2px dotted skyblue;
+}
+
+#rank-image {
+    text-align: center;
+}
+
+.rank-intro img {
+    width: 90%;
+    margin: auto
+}
+
+.rank-intro p {
+    text-align: right;
+    margin-right: 30px
+}
+
+/*施設案内*/
+
+#faci-tit {
+    width: 80%;
+    margin: auto;
+    background: #3EAD5C;
+    color: white;
+    font-weight: 100;
+    padding: 5px 15px;
+    font-size: 25px;
+    
+}
+.facility {
+    background-color: #F7FAF2;
+    padding: 15px;
+    width: 90%;
+    margin: 25px auto;
+}
+
+.facility h1 {
+    margin: 0;
+    font-weight: 300;
+    color: #3EAD5C;
+}
+
+.facility h2 {
+    margin: 0;
+    color: #3EAD5C;
+}
+
+.facility table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+.facility td {
+    border: none;
+    width: 50%;
+    padding: 0;
+}
+
+.facility ul {
+    list-style: none;
+    padding-left: 5px;
+    
+}
+
+.faci-place {
+    background: #3EAD5C;
+    margin: 5px 0;
+    font-size:  18px;
+    padding: 5px;
+    color: white;
+    width: 100%
+}
+
+.faci-place a {
+    font-style: normal;
+    color: white;
+}
+
+.faci-room {
+    padding-left: 10px;
+    margin: 0;
+    padding-right: 0;
+}
+
+.faci-dete {
+    color: #666666;
+    background: white;
+    padding: 10px;
+    margin: 0 0 0 10px;
+}
+
+.faci-room a{
+    color: #3EAD5C;
+    text-decoration: underline;
+}

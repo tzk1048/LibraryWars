@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #9EE0FF;
+}
+
+header {
+    margin: 0;
+    border-bottom: 5px solid #3E5CAD;
+    color: #758585;
+    padding-bottom: 30px;
+}
+
+header h1 {
+    margin: 10px 15px 20px 15px;
+    font-size: 32px;
+    color: #3E5CAD;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    float: left;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+#index {
+    clear: both;
+}
+
+#index p {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#index a {
+    text-decoration: underline;
+    color: #FFC240;
+}
+
+#index a:hover {
+    color: #AAAAAA;
+}
+
+#index a: visited {
+    
+}
+
+#index h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #1FBCFF; 
+}
+
+table {
+    margin: auto;
+    background-color: white;
+    margin-bottom: 15px;
+    width: 50%;
+    font-size: 20px
+}
+
+footer {
+    clear: both;
+    padding: 10px 15px;
+    background-color: #3EAD5C;
+}
+
+address {
+    color: #FFFFFF;
+}
+
+address h1 {
+    font-size: 12px;
+    font-weight: 100;
+    margin:auto 0;
+}
+
+address p {
+    margin: auto 0;
+}
+
+/*蔵書検索ｓ*/
+
+.library {
+    width: 90%;
+    font-size: 15px;
+    margin: 15px auto;
+}
+
+form {
+    margin: 10px;
+}
+
+#library {
+    width: 70%;
+    height: 25px;
+    font-size: 20px;
+    padding-left: 5px;
+    font-weight: 100;
+    margin: auto;
+}
+
+.library {
+    border-collapse: collapse;
+}
+
+.library th {
+    background-color: #46B1D4;
+    border:2px solid #3E5CAD;
+}
+
+.library td {
+    background-color: white;
+    border:2px solid #3E5CAD;
+}

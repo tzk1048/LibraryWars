@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>申し込みフォーム</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="../../../jquery-3.5.1.min.js"></script>
+        <script>
+          $(function() {
+               $("#header").load("../common/header.html");
+               $("#footer").load("../common/footer.html");
+               $("#left").load("../common/left.html");
+        });
+        </script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <div id="index">
+            <h6><a href="../common/index.html">武蔵野第一図書館トップ</a>><a href="event.html">イベント</a>> イベント詳細情報</h6>
+            <div id="left"></div>
+            <div id="content">
+                <a href="event.html" id="ev-back">≪イベント情報TOPに戻る</a>
+                <h3 class="application-index">申し込みフォーム</h3>
+
+                <div class="application-guide">
+                    <h2>イベント詳細</h2>
+                    <p>イベント：小・中学生　1日職業体験教室<br>日程：</p>
+                    <table id="app-ex">
+                            <tr><th></th><th></th><th>日程</th><th>申し込み締め切り</th><th>定員</th><th>申し込み状況</th></tr>
+                            <tr><td rowspan="2">小学生</td><td>第一回</td><td>8月2日（金）</td><td>7月21日（日）</td><td>10人</td><td>可</td></tr>
+                            <tr><td>第二回</td><td>8月23日（金）</td><td>8月11日（月）</td><td>10人</td><td>終了</td></tr>
+                            <tr><td rowspan="2">中学生</td><td>第一回</td><td>8月6日（火）</td><td>7月21日（日）</td><td>10人</td><td>可</td></tr>
+                            <tr><td>第二回</td><td>8月25日（月）</td><td>8月11日（月）</td><td>10人</td><td>可</td></tr>
+                        </table>
+                    <p>備考：定員に達し次第、募集を終了します。</p>
+                    <p><br>さらに詳しい情報は<a href="experience-detail.html">こちら</a></p>
+                    <h2>申し込みの流れ</h2>
+                    <ol>
+                        <li>申し込みフォームに必要事項を記入して、確認ボタンを押してください。</li>
+                        <li>確認フォームで誤りがなければ送信ボタンを押してください。</li>
+                        <li>event@lib-musashino.jpから申し込み完了のメールが届きます。</li>
+                        <li>抽選が行われる場合、後日抽選結果が同上のアドレスから通知されます。</li>
+                        <li>イベント開催日の数日前までにイベント詳細のメールをお送りします。</li>
+                    </ol>
+                    <h2>問い合わせ</h2>
+                    <p>ご不明な点がある場合、武蔵野第一図書館受付窓口にお越しいただくか、下記のメールアドレスへお気軽にお問い合わせください。<br>武蔵野第一図書館　総務部　企画課　event-faq@lib-musashino.jp<br>よくある質問は<a href="../faq/faq.html">こちら</a></p>
+                </div>
+                <table class="application">
+                    <tr><th colspan="2">入力フォーム</th></tr>
+                    <tr><td>名前</td><td><input type="text" name="yourname" id="yourname"></td></tr>
+                    <tr><td>学年</td><td>
+                        <select name="grade" id="grade">
+                            <option value="小学4年生">小学4年生</option>
+                            <option value="小学5年生">小学5年生</option>
+                            <option value="小学6年生">小学6年生</option>
+                            <option value="中学1年生">中学1年生</option>
+                            <option value="中学2年生">中学2年生</option>
+                            <option value="中学3年生">中学3年生</option>
+                        </select>
+                        <!--<input type="text" name="grade" list="grade" id="grade1">
+                        <datalist id="grade">
+                            <option value="小学4年生"></option>
+                            <option value="小学5年生"></option>
+                            <option value="小学6年生"></option>
+                            <option value="中学1年生"></option>
+                            <option value="中学2年生"></option>
+                            <option value="中学3年生"></option>
+                        </datalist>--></td></tr>
+                    <tr><td>住所</td><td>
+                        
+                        <h2>郵便番号</h2>
+                        <input type="text" id="zipcode" size="10" maxlength="8">
+                        <button id="btn">検索</button>
+                        <h2>都道府県</h2>
+                        <input type="text" id="prefecture" size="10">
+                        <h2>市区町村</h2>
+                        <input type="text" id="city" size="10">
+                        <h2>番地・マンション名</h2>
+                        <input type="text" id="address" size="10">
+                        </td></tr>
+                    <tr><td id="app-title">メールアドレス</td><td>
+                        <input type="email" placeholder="musahisno@library.com" id="email">
+                        <p>event@lib-musashino.jpからのメールが受信できるメールアドレスを入力してください。</p>
+                        </td></tr>
+                    <tr><td>電話番号</td><td>
+                        <input type="tel" class="tel" id="tel1">-<input type="tel" class="tel" id="tel2">-<input type="tel" class="tel" id="tel3">
+                        <label><input type="radio" class="radio" id="teltype1" name="teltype">自宅</label>
+                        <label><input type="radio" class="radio" name="teltype">保護者携帯</label></td></tr>
+                    <tr><td>日程</td><td>
+                        <h2>小学生</h2>
+                        <label><input type="radio" class="radio" name="date1" value="小学生第一回（8/2)">第一回</label>
+                        <label><input type="radio" class="radio" name="date1" value="小学生第二回（8/23）">第二回</label>
+                        <h2>中学生</h2>
+                        <label><input type="radio" class="radio" name="date1" value="中学生第一回（8/6）">第一回（終了）</label>
+                        <label><input type="radio" class="radio" name="date1" value="中学生第二回（8/25）">第二回</label>
+                        </td></tr>
+                </table>
+                <input type="button" onclick="func1()" value="確認" class="app-desi">
+                <div class="confirm">
+                    <h2>確認フォーム</h2>
+                    <p>間違いのある場合は、訂正してからもう一度「確認」ボタンを押してください。</p>
+                    <div id="confirmdate">
+                    </div>
+                </div>
+                <a href="experience-comp.html"><button class="app-desi">送信</button></a>
+            </div>
+            <div id="right">
+                <img src="../image/adoptionadv.PNG" id="adoptionadv">
+            </div>
+            <script language="JavaScript" type="text/javascript" src="../js/experience.js"></script>
+        </div>
+        <footer id="footer"></footer>
+    </body>
+</html>

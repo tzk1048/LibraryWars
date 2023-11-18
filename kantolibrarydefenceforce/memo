@@ -1,0 +1,171 @@
+     <!--   <ul class="Menu">
+            <li>関東図書基地</li>
+                <ul class="subMenu">
+                <li><a href="index.html">トップ</a></li>
+                <li><a href="about/about.html">関東図書基地とは</a></li>
+                <li><a href="about/greeting.html">関東図書基地司令挨拶</a></li>
+                <li><a href="about/history.html">図書隊の歴史</a></li>
+                <li><a href="about/about-libraryforce.html">図書隊について</a></li>
+                <li><a href="about/censorship.html">検閲抗争について</a></li>
+                <li><a href="about/library-freedom.html">図書館戦争の自由に関する宣言</a></li>
+                </ul>
+            <li>施設案内</li>
+                <ul class="subMenu">
+                <li><a href="guide/guide.html">一般開放情報</a></li>
+                <li><a href="musashino-first-library/index.html">武蔵野第一図書館</a></li>
+                <li><a href="guide/attention.html">利用の際の注意</a></li>
+                </ul>
+            <li>図書館のご案内</li>
+                <ul class="subMenu">
+                <li><a href="musashino-first-library/index.html">武蔵野第一図書館</a></li>
+                <li><a href="musashino-second-library/index.html">武蔵野第二図書館</a></li>
+                </ul>
+            <li>広報・イベント</li>
+                <ul class="subMenu">
+                <li><a href="event/event.html#pr">広報部</a></li>
+                <li><a href="event/event.html"#event>イベント情報</a></li>
+                </ul>
+            <li>隊員ブログ</li>
+                <ul class="subMenu">
+                <li><a href="blog/blog.html">ブログトップ</a></li>
+                <li><a href="blog/blog1.html">一刀両断レビュー</a></li>
+                <li><a href="blog/blog2.html">関東図書基地写真館</a></li>
+                </ul>
+            <li>よくある質問</li>
+                <ul class="subMenu">
+                <li><a href="faq/faq.html#user">利用者の方の質問</a></li>
+                <li><a href="faq/faq.html#enlishment">入隊希望者の方の質問</a></li>
+                </ul>
+            <li>採用情報</li>
+                <ul class="subMenu">
+                <li><a href="adoption/adoption.html">採用情報トップ</a></li>
+                <li><a href="adoption/adoption1.html">新卒採用</a></li>
+                <li><a href="adoption/adoption2.html">中途採用</a></li>
+                <li><a href="adoption/adoption3.html">事務採用</a></li>
+                <li><a href="adoption/adoption4.html">準隊員採用</a></li>
+                </ul>
+        </ul>
+
+
+.Menu {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.Menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 199px;
+    position: relative;
+}
+
+.Menu li a{
+	background:#ccc;
+	border-right:1px solid #8c8c8c;
+	text-align:center;
+	font-size:14px;
+	display:block;
+	padding:10px 0;
+	text-decoration:none;
+	color:#fff;
+    padding: 10px 0;
+    position: relative;
+    z-index: 100;
+}
+.Menu li:last-child a{
+	border-right:none;
+}
+ 
+.Menu li ul.subMenu li a{
+	float:none;
+	background:#8c8c8c;
+	border-right:none;
+	border-bottom:1px solid #ccc;
+	display:block;
+}
+ 
+.Menu li ul.subMenu li:last-child a{
+	border:none;
+}
+
+.Menu li ul.subMenu{
+	position:absolute;
+	z-index:10;
+	top:39px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: opacity 400ms liner, top 400ms ease-in;
+}
+
+.Menu li:hover ul.subMenu{
+    opacity: 1;/*opacityを1（透過なし）にして表示*/
+	top: 30px;
+	width:inherit;/*inheritでもとの値を継承*/
+	height:inherit;
+}
+
+        -->
+        
+
+<!--
+        <nav>
+            <ul class="global-nav">
+                <li><a href='about.html'>関東図書基地</a></li>
+                <li><a href="guide.html">施設案内</a></li>
+                <li><a href="introduction.html">図書館のご案内</a></li>
+                <li><a href="event.html">広報・イベント</a></li>
+                <li><a href="blog.html">隊員ブログ</a></li>
+                <li><a href="faq.html">よくある質問</a></li>
+                <li><a href="adoption.html">採用情報</a></li>
+            </ul>
+        </nav>
+        <!--
+
+-->
+
+
+
+    
+
+.global-nav {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 800;
+    background-color: #AAAAAA
+}
+
+.global-nav li{
+    text-align: center;
+    float: left;
+    margin: 5px 0px;
+    font-size: 30px;
+    list-style: none;
+    display: table-cell;
+    width: 14%;
+    min-width: 0px;   
+    margin-right: 0;
+    margin-left: 0;
+    border-right: 2px solid #ffa500;
+}
+
+
+
+
+.global-nav li a{
+    color:#333333;
+    text-decoration: none;
+}
